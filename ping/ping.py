@@ -17,7 +17,6 @@ class WebsitePinger(commands.Cog):
             try:
                 async with session.get(self.website_url) as response:
                     if response.status == 200:
-                        print(f"Successfully pinged {self.website_url}")
             except Exception as e:
                 print(f"Failed to ping {self.website_url}: {e}")
 
